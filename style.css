@@ -1,0 +1,60 @@
+@keyframes rotate {
+	to {
+		transform: rotate(-360deg);
+	}
+}
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	color: white;
+	font-family: "Amarante", serif;
+	background-color: black;
+}
+svg {
+	max-width: 150px;
+	max-height: 150px;
+}
+path {
+	transform-origin: center center;
+	z-index: 999;
+	animation: rotate 10s linear infinite;
+}
+section {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+}
+.logo {
+	padding: 20px 10px 25px 20px;
+}
+.text {
+	padding: 0px 25px 0px 25px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.text h1 {
+	font-size: 6vmin;
+}
+.text img {
+	padding: 10px;
+	max-height: 60vmin;
+}
+.contact {
+	padding: 50px 10px 10px 10px;
+}
+.contact form {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.contact label:last-of-type {
+	padding-left: 10px;
+}
+.contact button {
+	width: 60px;
+}
